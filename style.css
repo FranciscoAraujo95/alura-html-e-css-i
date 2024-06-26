@@ -4,6 +4,8 @@
 }
 
 body {
+    height: 100vh; /* viewport height */
+    box-sizing: border-box;
     background-color: #000;
     color: #f6f6f6;
 }
@@ -18,9 +20,4 @@ p {
 }
 .destaque-titulo {
     color: #22d4fd;
-}
-
-a {
-    text-decoration: none;
-    color: blueviolet;
 }
