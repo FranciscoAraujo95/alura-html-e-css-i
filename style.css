@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap');
 
+:root {
+    --titulo-principal: 2rem;
+    --titulo-subtitulo: 22px;
+    --texto-paragrafo: 1.2rem;
+    --cor-azul-principal: #22d4fd;
+    --cor-azul-secundaria: #12abdb;
+    --cor-texto-comum: #f6f6f6;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,18 +18,19 @@
 body {
     height: 100vh; /* viewport height */
     box-sizing: border-box; /*Boa prática inserir isso no body, para garantir que nenhum elemento vai estourar o conteúdo */
+    color: var(--cor-texto-comum);
     background-color: #000;
-    color: #f6f6f6;
 }
 
 .destaque-titulo {
     color: #22d4fd;
 }
 
+
 .apresentacao {
     margin: 10% 15%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     gap: 2.5rem;
 }
@@ -32,29 +43,59 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36px;
     font-family: "Krona One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: var(--titulo-principal);
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px;
+    font-size: var(--texto-paragrafo);
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.apresentacao__conteudo__texto span {
+    color: var(--cor-azul-principal);
 }
 
 .apresentacao__links {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     justify-content: space-between;
 }
 
+.apresentacao__links__subtitulo {
+    font-family: "Krona One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: var(--titulo-subtitulo);
+}
+
 .apresentacao__links__link {
-    background-color: #22D4FD;
-    width: 280px;
+    /* background-color: #22D4FD; */
+    border: 2px solid #22d4fd;
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     padding: 21.5px 0px;
     font-family: "Monteserrat", Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: #000;
+    color: var(--cor-texto-comum);
     text-decoration: none;
+    transition: .3s;
+
+}
+
+.apresentacao__links__link:hover {
+    transform: scale(1.04);
+    transition: .3s;
+    box-shadow: 4px -4px 1px var(--cor-azul-secundaria);
+}
+
+.fa-brands {
+    margin-right: 1rem;
+    color: var(--cor-azul-principal);
+}
+
+.fa-solid {
+    color: var(--cor-azul-principal);
 }
