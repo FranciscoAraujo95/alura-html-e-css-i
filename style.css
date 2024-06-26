@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,16 +13,6 @@ body {
     color: #f6f6f6;
 }
 
-
-h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: lighter;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .destaque-titulo {
     color: #22d4fd;
 }
@@ -29,4 +22,18 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: "Krona One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
