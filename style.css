@@ -19,3 +19,8 @@ p {
 .destaque-titulo {
     color: #22d4fd;
 }
+
+a {
+    text-decoration: none;
+    color: blueviolet;
+}
