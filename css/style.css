@@ -98,7 +98,7 @@ body.active__tsunami {
 }
 
 .cabecalho__menu__link:hover {
-    color: var(--cor-hover);
+    color: var(--cor-quarteraria);
     transition: .3s;
 }
 
@@ -111,7 +111,7 @@ body.active__tsunami {
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 38.43rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -197,10 +197,7 @@ body.active__tsunami {
     background-color: var(--cor-hover);
 }
 
-.img {
-    max-width: 100%;
-    /* width: 400px; */
-    display: block;
+.apresentacao__imagem {
 }
 
 @keyframes girar {
