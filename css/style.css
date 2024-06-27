@@ -4,11 +4,11 @@
     --titulo-principal: 2rem;
     --titulo-subtitulo: 1.375rem;
     --texto-paragrafo: 1.2rem;
+    --cor-hover: #3f4e4f;
     --cor-primaria: #2c3639;
     --cor-secundaria: #dcd7c9;
     --cor-terciaria: #a2785c;
     --cor-quarteraria: #876445;
-    --cor-hover: #3f4e4f;
     --font-family-primaria: "Krona One", sans-serif;
     --font-family-secundaria: "Montserrat", sans-serif;
 }
@@ -34,10 +34,41 @@ body {
     box-sizing: border-box; /*Boa prática inserir isso no body, para garantir que nenhum elemento vai estourar o conteúdo */
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
+
+    transition: .5s;
+}
+
+body.active__forest {
+    --cor-hover: #436850;
+    --cor-primaria: #12372A;
+    --cor-secundaria: #FBFADA;
+    --cor-terciaria: #ADBC9F;
+
+    transition: .5s;
+}
+
+body.active__tsunami {
+    --cor-hover: #393E46;
+    --cor-primaria: #222831;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #00ADB5;
+
+    transition: .5s;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 .cabecalho {
-    padding: 3% 0% 0% 20%;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .cabecalho__menu {
@@ -47,17 +78,27 @@ body {
     list-style: none;
 }
 
+.cabecalho__temas {
+    display: flex;
+    gap: 1rem;
+    font-size: var(--titulo-subtitulo);
+}
+
+.cabecalho__temas span {
+    cursor: pointer;
+    color: var(--cor-terciaria);
+}
+
 .cabecalho__menu__link {
     font-family: var(--font-family-secundaria);
     font-size: var(--texto-paragrafo);
     color: var(--cor-terciaria);
     text-decoration: none;
     transition: .3s;
-
 }
 
 .cabecalho__menu__link:hover {
-    color: var(--cor-quarteraria);
+    color: var(--cor-hover);
     transition: .3s;
 }
 
@@ -90,7 +131,6 @@ body {
 .destaque-titulo {
     color: var(--cor-terciaria);
 }
-
 
 .apresentacao__conteudo__texto {
     font-size: var(--texto-paragrafo);
@@ -148,7 +188,6 @@ body {
     color: var(--cor-texto-comum);
     text-decoration: none;
     transition: .3s;
-
 }
 
 .apresentacao__links__link:hover {
@@ -184,7 +223,7 @@ body {
 
 .footer {
     font-family: var(--font-family-secundaria);
-    font-size: 18px;
+    font-size: var(--texto-paragrafo);
     font-weight: 600;
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
@@ -211,8 +250,4 @@ body {
 
 .container__download i {
     font-size: 1.5rem;
-}
-
-.pseudo__elemento {
-    position: relative;
 }
