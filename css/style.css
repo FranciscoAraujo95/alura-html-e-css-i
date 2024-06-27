@@ -73,6 +73,11 @@ body {
     line-height: 1.6rem;
 }
 
+.apresentacao__conteudo__texto a {
+    text-decoration: none;
+    color: var(--cor-azul-principal);
+}
+
 .apresentacao__conteudo__texto span {
     color: var(--cor-azul-principal);
     transition: .3s;
