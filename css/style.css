@@ -197,8 +197,8 @@ body.active__tsunami {
     background-color: var(--cor-hover);
 }
 
-.apresentacao__imagem {
-}
+/* .apresentacao__imagem {
+} */
 
 @keyframes girar {
     0% {
